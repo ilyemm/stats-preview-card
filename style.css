@@ -33,7 +33,7 @@ body p {
 
 .main-container {
   width: 30rem;
-  height: 70rem;
+  height: 71rem;
   background-color: hsl(244, 38%, 16%);
   margin: 0 auto 2rem;
   text-align: center;
@@ -43,8 +43,8 @@ body p {
 
 .img-container {
   position: relative;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .img-container .mobile-img,
 .img-container .desktop-img {
@@ -66,11 +66,12 @@ body p {
 
 .text-container {
   box-sizing: border-box;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin-top: 2rem;
 }
 .text-container h1 {
   font-size: 2.3rem;
+  padding: 0 1rem;
 }
 .text-container .h1-purple {
   color: hsl(277, 64%, 61%);
@@ -78,7 +79,6 @@ body p {
 .text-container p {
   font-size: 1.25rem;
   line-height: 2.2rem;
-  padding: 0 1em;
 }
 
 .stats-text {
@@ -96,7 +96,7 @@ body p {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   .main-container {
     width: 100rem;
     height: 40rem;
@@ -106,15 +106,21 @@ body p {
     box-sizing: border-box;
     padding-left: 3rem;
   }
+  .main-container .img-container {
+    height: 100%;
+    width: auto;
+  }
   .text-container {
     max-width: 45%;
     margin-top: 0;
   }
   .text-container h1 {
     font-size: 3.5rem;
+    padding: 0;
   }
   .text-container p {
     padding: 0;
+    width: 95%;
   }
   .mobile-img {
     display: none;

@@ -57,7 +57,7 @@ body
 .main-container
 {
     width: 30rem;
-    height: 70rem;
+    height: 71rem;
     background-color: $cardbg-dark-blue;
     margin: 0 auto 2rem;
     text-align: center;
@@ -68,8 +68,8 @@ body
 .img-container
 {
     position: relative;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 
     .mobile-img,
     .desktop-img
@@ -98,12 +98,13 @@ body
 .text-container 
 {
     box-sizing: border-box;
-    padding: 0 3rem;
+    padding: 0 2rem;
     margin-top: 2rem;
 
     h1 
     {
         font-size: 2.3rem;
+        padding: 0 1rem;
     }
 
     .h1-purple 
@@ -115,7 +116,6 @@ body
     {
         font-size: 1.25rem;
         line-height: 2.2rem;
-        padding: 0 1em;
     }
 }
 
@@ -139,7 +139,7 @@ body
     }
 }
 
-@media screen and (min-width: 1200px) 
+@media only screen and (min-width: 1100px) 
 {
     .main-container
     {
@@ -151,6 +151,12 @@ body
 
         box-sizing: border-box;
         padding-left: 3rem;
+
+        .img-container
+        {
+            height: 100%;
+            width: auto;
+        }
     } 
 
     .text-container
@@ -161,11 +167,13 @@ body
         h1 
         {
             font-size: 3.5rem;
+            padding: 0;
         }
 
         p 
         {
             padding: 0;
+            width: 95%;
         }
     }
 
